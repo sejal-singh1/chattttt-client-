@@ -1,0 +1,13 @@
+.msg-container{
+    background-color: rgb(12, 12, 12);
+    color: antiquewhite;
+    border-radius: 5px;
+    padding: 0.5rem;
+    width: fit-content;
+}
+.sender{
+    color: lightskyblue;
+    font-weight:600 ;
+    font-family:Arial, Helvetica, sans-serif;
+
+}

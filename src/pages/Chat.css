@@ -1,0 +1,106 @@
+/* Container for the entire chat */
+.chat-container {
+
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgb(54, 151, 151);
+    border-radius: 8px;
+    padding: 1rem;
+    gap: 1rem;
+   box-sizing: border-box;
+   font-family: Arial, sans-serif;
+    background-color: rgb(8, 69, 69);
+    color: #ddd; 
+     
+}
+.input-chat{
+     width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    padding: 0 3rem;
+    border-radius: 1.5rem;
+    background-color: rgb(211, 204, 204); 
+}
+.stack-chat{
+    flex-direction: row;
+     height: 100%; 
+     padding: 1rem;
+     align-items: center;
+     position: relative;
+}
+.submit-button{
+    
+    background-color: rgb(185, 227, 120);
+    color:black;
+    margin-left: 1rem;
+    padding: 0.5rem;
+
+}
+.submit-button:hover{
+    background-color: rgb(124, 203, 5);
+}
+.addFile-button{
+    position: absolute;
+    left: 1.5rem;
+    rotate: 30deg;
+}
+/* Base styles remain the same */
+/* Base styles remain the same */
+
+/* Responsive adjustments for screens narrower than 768px */
+@media (max-width: 768px) {
+    .chat-container {
+        
+        height: 100%;
+        border-radius: 0;
+        padding: 0.5rem;
+    }
+
+    .input-chat {
+        width: 100%;
+        padding: 0 2rem;
+        
+        height: 2rem;
+        font-size: 1rem;
+    }
+
+    .stack-chat {
+        flex-direction: row;
+        padding: 0.5rem;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .submit-button {
+        padding: 0.4rem 0.8rem;
+        font-size: 0.9rem;
+        margin-left: 0.5rem;
+        border-radius: 1rem;
+    }
+
+    .addFile-button {
+        left: 0.5rem;
+        
+        rotate: 0deg;
+    }
+}
+
+/* Further adjustments for very small screens (e.g., 480px and below) */
+@media (max-width: 480px) {
+    .input-chat {
+        padding: 0 1rem;
+        font-size: 0.85rem;
+    }
+
+    .submit-button {
+        padding: 0.3rem 0.6rem;
+        font-size: 0.8rem;
+        margin-left: 0.3rem;
+    }
+
+    .addFile-button {
+        left: 0.2rem;
+    }
+}

@@ -1,0 +1,62 @@
+.group-container{
+    height: 100vh
+}
+
+.link-group {
+    
+    text-decoration: none;
+    color: white;
+    padding: 0rem;
+
+}
+.edit-icon{
+    color: rgb(154, 234, 154)
+}
+.done-icon{
+    color: rgb(154, 234, 154) 
+}
+.input-field{
+    
+    background-color: antiquewhite;
+    border-radius: 2px;
+}
+@media only screen and (max-width: 600px) {
+    .group-container {
+        padding: 0.5rem; /* Reduce padding on smaller screens */
+    }
+
+    .input-field {
+        font-size: 0.9rem; /* Smaller font size for input */
+    }
+
+    .link-group {
+        font-size: 0.8rem; /* Adjust font size for links */
+    }
+}
+@media only screen and (min-width: 600px) and (max-width: 992px) {
+    .group-container {
+        padding: 1rem;
+    }
+
+    .input-field {
+        font-size: 1rem;
+    }
+
+    .link-group {
+        font-size: 1rem;
+    }
+}
+@media only screen and (min-width: 992px) {
+    .group-container {
+        padding: 2rem;
+    }
+
+    .input-field {
+        font-size: 1.1rem;
+        max-width: 500px; /* Limit input width on large screens */
+    }
+
+    .link-group {
+        font-size: 1.2rem;
+    }
+}

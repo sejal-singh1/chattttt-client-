@@ -1,0 +1,42 @@
+.user-item {
+    width: 100%;
+    padding: 10px;
+    background-color: #e1eef8;
+    border-radius: 8px;
+    margin-bottom: 8px;
+  }
+  
+  .user-item-stack {
+    width: 100%;
+    display: flex;
+    
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .user-name {
+    flex-grow: 1;
+    display: -webkit-box;
+  
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-weight: 500;
+  }
+  
+  .add-friend-button {
+    
+    background-color: #1976d2;
+    color: white;
+    transition: background-color 0.3s;
+  }
+  
+  .add-friend-button:hover {
+    background-color: #1565c0;
+  }
+  
+  .add-friend-button.loading {
+    background-color: #b0bec5;
+    pointer-events: none;
+  }
+  

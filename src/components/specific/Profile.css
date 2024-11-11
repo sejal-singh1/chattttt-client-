@@ -1,0 +1,32 @@
+.profile-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+  
+  .profile-avatar {
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+    margin-bottom: 1rem;
+    border: 5px solid white;
+  }
+  @media (max-width: 768px) {
+    .profile-container {
+      gap: 1rem;
+    }
+  
+    .profile-avatar {
+      width: 150px;
+      height: 150px;
+    }
+  }
+  
+  /* Media query for very small screens */
+  @media (max-width: 480px) {
+    .profile-avatar {
+      width: 100px;
+      height: 100px;
+    }
+  }

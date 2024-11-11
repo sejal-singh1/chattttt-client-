@@ -1,0 +1,63 @@
+
+.chat-link {
+    
+    text-decoration: none;
+    color: white;
+    padding: 0rem;
+
+}
+.chat-link:hover {
+    background-color:rgb(235, 149, 149);
+}
+.chat-item-container {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    padding: 1rem;
+    position: relative;
+}
+.chat-item-same-sender {
+    background-color: black;
+    color: white;
+}
+
+.chat-item-default {
+    background-color: unset;
+    color: unset;
+}
+.box-chat{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: green;
+    position: absolute;
+    top: 50%;
+    right: 1rem;
+    transform: translateY(-50%);
+}
+@media (min-width: 1024px) {
+    .chat-item-container {
+        padding: 1.5rem; /* Increased padding for larger screens */
+    }
+
+    .box-chat {
+        width: 12px; /* Slightly larger indicator for larger screens */
+        height: 12px;
+    }
+}
+
+/* Media query for smaller screens */
+@media (max-width: 600px) {
+    .chat-item-container {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+        padding: 0.5rem; /* Reduced padding for smaller screens */
+    }
+
+    .chat-link {
+        padding: 0.5rem; /* Add some padding for touch targets */
+    }
+
+    .box-chat {
+        right: 0.5rem; /* Adjust position for smaller screens */
+    }
+}
